@@ -18,5 +18,15 @@ export default {
 </script>
 
 <style scoped>
+    .task-grid{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
 
+    .no-task{
+        color: #EDECEE;
+        font: size 1.7rem;
+    }
 </style>
