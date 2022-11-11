@@ -35,6 +35,7 @@ export default {
 		justify-content: center;
 		align-items: center;
 		height: 100vh;
+		gap: 100px;
 	}
 
 	#app h1 {
