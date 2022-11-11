@@ -28,7 +28,7 @@ export default {
 
 	#app h1 {
 		margin-bottom: 5px;
-		font-weight: 300;
+		font-weight: 700;
 		font-size: 3rem;
 	}
 </style>
