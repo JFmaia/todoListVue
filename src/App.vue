@@ -25,7 +25,7 @@ export default {
 	body {
 		font-family: 'Lato', sans-serif;
 		background: #15141B;
-		color: #A277FF;
+		color: #7437f7;
 	}
 
 	#app {
