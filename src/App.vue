@@ -11,6 +11,7 @@ export default {
 </script>
 
 <style>
+	/* EDECEE color de textos normais */
 	body {
 		font-family: 'Lato', sans-serif;
 		background: #15141B;
