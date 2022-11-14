@@ -73,6 +73,26 @@ export default {
 </script>
 
 <style>
+	* {
+		scrollbar-width: thin;
+		scrollbar-color: #7437f7 #EDECEE ;
+	}
+
+	/* Barra de rolagem Edeg, Safira, GoogleChrome*/
+	*::-webkit-scrollbar {
+		width: 0.3rem;
+	}
+
+	*::-webkit-scrollbar-track {
+		background: #EDECEE;
+	}
+
+	*::-webkit-scrollbar-thumb {
+		background-color: #7437f7;
+		border-radius: 1px;
+		border: 3px solid #7437f7;
+	}
+
 	/* EDECEE color de textos normais */
 	html,body{
 		height: 100%;
