@@ -5,7 +5,11 @@
 		<NewTask @taskAdded="addTask">
 
 		</NewTask>
-		<TaskGrid :tasks="tasks" @taskDeleted="deleteTask"/>
+		<TaskGrid 
+			:tasks="tasks" 
+			@taskDeleted="deleteTask"
+			@taskStateChanged="toogleTaksState"
+		/>
 	</div>
 </template>
 
@@ -34,6 +38,9 @@ export default {
 		},
 		deleteTask(i){
 			this.tasks.splice(i,1)
+		},
+		toogleTaksState(i){
+			this.tasks[i].pending = !this.tasks[i].pending
 		}
 	}
 }
