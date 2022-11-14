@@ -5,7 +5,7 @@
 		<NewTask @taskAdded="addTask">
 
 		</NewTask>
-		<TaskGrid :tasks="tasks"/>
+		<TaskGrid :tasks="tasks" @taskDeleted="deleteTask"/>
 	</div>
 </template>
 
@@ -17,10 +17,7 @@ export default {
 	components:{TaskGrid, NewTask},
 	data(){
 		return{
-			tasks:[
-				{name:"Lavar louça", pending: false},
-				{name:"Estudar 2hr pela manhã!", pending: true},
-			]
+			tasks:[]
 		}
 	},
 	methods:{
@@ -34,6 +31,9 @@ export default {
 					pending:task.pending || true
 				})
 			}
+		},
+		deleteTask(i){
+			this.tasks.splice(i,1)
 		}
 	}
 }
